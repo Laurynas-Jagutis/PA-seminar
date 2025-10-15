@@ -1,0 +1,14 @@
+pm4py==2.2.17.1
+wasserstein==1.0.1
+strsimpy==0.2.1
+ruptures
+hotelling
+pulp
+scikit-learn
+pandas
+plotly
+kaleido
+nbformat
+seaborn
+ipykernel
+pyyaml
