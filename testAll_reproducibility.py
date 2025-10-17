@@ -27,6 +27,8 @@ from pathlib import Path
 from itertools import product
 import yaml
 
+from pm4py import read_xes
+
 #################################
 ############ HELPERS ############
 #################################
@@ -467,6 +469,7 @@ def get_logpaths_with_changepoints():
         (Path("EvaluationLogs","Bose", "bose_log.xes.gz").as_posix(), [1199, 2399, 3599, 4799]), # A change every 1200 cases, 6000 cases in total (Skipping 5999 because a change on the last case doesnt make sense)
     ]
 
+
     ceravolo_root = Path("EvaluationLogs","Ceravolo")
     for item in ceravolo_root.iterdir():
         _, _, _,num_cases, _ = item.stem.split("_")
@@ -475,9 +478,33 @@ def get_logpaths_with_changepoints():
         drift_indices = [(int(num_cases)//2) - 1] # "The first half of the stream is composed of the baseline model, and the second half is composed of the drifted model"
         logPaths_Changepoints.append((item.as_posix(), drift_indices))
     
+
+    # For the Ostovar event logs, there is some extra code in case the reduced size data is used
+    # In this case, all known changepoints outside of the data's range will be excluded
+    ostovar_logs = Path("EvaluationLogs", "Ostovar")
+    for item in ostovar_logs.iterdir():
+        if not (item.suffix in [".xes", ".gz"] and "xes" in item.name):
+            continue
+
+        try:
+            log = read_xes(item.as_posix())
+            num_traces = len(log)
+        except Exception as e:
+            continue
+
+        # Known changepoints for Ostovar
+        cps = [999, 1999]
+
+        # Only keep the changepoints within the event log's range
+        valid_cps = [cp for cp in cps if cp < (num_traces - 400)]
+        if valid_cps:
+            logPaths_Changepoints.append((item.as_posix(), valid_cps))
+
+
+    # The known changepoints for the generated additional logs
     logPaths_Changepoints += [
-        (item.as_posix(), [999,1999])
-        for item in Path("EvaluationLogs","Ostovar").iterdir()
+        (item.as_posix(), [500, 1000])
+        for item in Path("EvaluationLogs","AdditionalLogs").iterdir()
     ]
 
     return logPaths_Changepoints
