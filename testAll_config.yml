@@ -10,7 +10,7 @@ approaches:
   #     step_size: &sw_stepsizes [2]
   # Martjushev:
   #   function: "testMartjushev"
-  #   enabled: False
+  #   enabled: True
   #   meta-params:
   #     do_j: True # True, but doesn't matter since enabled=False
   #     do_wc: False
@@ -37,12 +37,12 @@ approaches:
   #   params:
   #     window_size: [100, 200, 300, 400, 500, 600]
   #     step_size: [2]
-  Maaradji:
-    function: "testMaaradji"
-    enabled: True
-    params:
-      window_size: [50, 100, 150, 200, 250, 300]
-      step_size: [2]
+  # Maaradji:
+  #   function: "testMaaradji"
+  #   enabled: True
+  #   params:
+  #     window_size: [50, 100, 150, 200, 250, 300]
+  #     step_size: [2]
   # ProcessGraph:
   #   function: "testGraphMetrics"
   #   enabled: True
@@ -54,12 +54,12 @@ approaches:
   #       [400, 400], [400,500], [400, 600], [400,700],
   #     ]
   #     pvalue: [0.1, 0.05, 0.005, 0.0001]
-  # Zheng:
-  #   function: "testZhengDBSCAN"
-  #   enabled: True
-  #   params:
-  #     mrid: [300, 400, 500, 600, 700, 800]
-  #     eps_modifiers: [[0.1, 0.2, 0.3, 0.4, 0.5]] # Has to be double list to signify that this is a single parameter, not a list of possible params
+  Zheng:
+    function: "testZhengDBSCAN"
+    enabled: True
+    params:
+      mrid: [300, 400, 500, 600, 700, 800]
+      eps_modifiers: [[0.1, 0.2, 0.3, 0.4, 0.5]] # Has to be double list to signify that this is a single parameter, not a list of possible params
   # LCDD:
   #   function: "testLCDD"
   #   enabled: True
