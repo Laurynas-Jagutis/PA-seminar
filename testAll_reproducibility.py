@@ -508,6 +508,11 @@ def get_logpaths_with_changepoints():
         for item in Path("EvaluationLogs","AdditionalLogs").iterdir()
     ]
 
+    # logPaths_Changepoints += [
+    #     (item.as_posix(), [999,1999])
+    #     for item in Path("EvaluationLogs","Ostovar").iterdir()
+    # ]
+
     return logPaths_Changepoints
 
 
