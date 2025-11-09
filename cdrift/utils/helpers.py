@@ -19,6 +19,11 @@ from tqdm.auto import tqdm
 import pandas as pd
 from datetime import timedelta
 
+import re
+import ast
+import pandas as pd
+from typing import Any
+
 def _dateToDatetime(date:datetime.date)->datetime.datetime:
     """A helper function to convert a dateime.date object to a datetime.datetime object.
 
@@ -192,17 +197,61 @@ def getTraceLog(log:EventLog, activityName_key:str=xes.DEFAULT_NAME_KEY)->List[T
         for case in log
     ]
 
-def readCSV_Lists(path:Any)->pd.DataFrame:
-    """A helper function to read a csv file and automatically convert the "Detected Changepoints" and "Actual Changepoints for Log" columns to Lists, and the "Duration" column to a datetime.timedelta.
+# unwrap patterns like array([1,2,3]) -> [1,2,3]
+_ARRAY_WRAP_RE = re.compile(r"\barray\s*\(\s*(\[[\s\S]*?\])\s*\)")
+# unwrap patterns like np.float64(930.0) -> 930.0  (apply repeatedly)
+_NP_WRAP_RE = re.compile(r"\bnp\.\w+\(\s*([^\(\)]*?)\s*\)")
 
-    Args:
-        path (Any): The path to the csv file.
+def _clean_and_eval_listlike(s, colname: str):
+    if s is None or s == "" or (isinstance(s, float) and pd.isna(s)):
+        return []
+    txt = str(s).strip()
 
-    Returns:
-        pd.Dataframe: The csv file as a pandas dataframe.
+    # Strip array(...) once
+    txt = _ARRAY_WRAP_RE.sub(r"\1", txt)
+
+    # Strip np.*(...) repeatedly
+    prev = None
+    while prev != txt:
+        prev = txt
+        txt = _NP_WRAP_RE.sub(r"\1", txt)
+
+    # Normalize tokens literal_eval can't handle
+    txt = re.sub(r"\bNaN\b|\bnan\b", "None", txt)
+    txt = re.sub(r"\bInfinity\b|\binf\b", "1e309", txt)  # becomes inf as float
+
+    try:
+        return ast.literal_eval(txt)
+    except Exception as e:
+        raise ValueError(
+            f"Failed to parse value in '{colname}': {s!r} (cleaned: {txt!r})"
+        ) from e
+
+def readCSV_Lists(path: Any) -> pd.DataFrame:
+    """Read CSV and convert:
+       - 'Detected Changepoints' and 'Actual Changepoints for Log' -> list
+       - 'Duration' -> timedelta (via your convertToTimedelta)
     """
+    return pd.read_csv(
+        path,
+        converters={
+            "Detected Changepoints": lambda s: _clean_and_eval_listlike(s, "Detected Changepoints"),
+            "Actual Changepoints for Log": lambda s: _clean_and_eval_listlike(s, "Actual Changepoints for Log"),
+            "Duration": convertToTimedelta,  # keep your existing converter
+        },
+    )
 
-    return pd.read_csv(path, converters={"Detected Changepoints":ast.literal_eval, "Actual Changepoints for Log":ast.literal_eval, "Duration":convertToTimedelta})
+# def readCSV_Lists(path:Any)->pd.DataFrame:
+#     """A helper function to read a csv file and automatically convert the "Detected Changepoints" and "Actual Changepoints for Log" columns to Lists, and the "Duration" column to a datetime.timedelta.
+
+#     Args:
+#         path (Any): The path to the csv file.
+
+#     Returns:
+#         pd.Dataframe: The csv file as a pandas dataframe.
+#     """
+
+#     return pd.read_csv(path, converters={"Detected Changepoints":ast.literal_eval, "Actual Changepoints for Log":ast.literal_eval, "Duration":convertToTimedelta})
 
 def convertToTimedelta(str_:str)->timedelta:
     """Convert a string of the form "HH:MM:SS" to a timedelta object.

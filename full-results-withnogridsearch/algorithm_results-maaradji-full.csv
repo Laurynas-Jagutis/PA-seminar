@@ -1,0 +1,152 @@
+Algorithm,Log Source,Log,Window Size,SW Step Size,Detected Changepoints,Actual Changepoints for Log,F1-Score,Average Lag,Duration,Duration (Seconds),Seconds per Case
+Maaradji Runs,Ostovar,Nested_RIO_output_RIO_2,300,2,[],"[999, 1999]",,,00:07:40,460.1935131000064,0.15344898736245627
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_cp,300,2,[498],[499],1.0,1.0,00:00:04,4.075556600000709,0.004075556600000709
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_rp,300,2,[498],[499],1.0,1.0,00:00:04,4.074330299990834,0.0040743302999908335
+Maaradji Runs,Ostovar,Atomic_SerialMove_output_SerialMove_5,300,2,[],"[999, 1999]",,,00:04:27,267.9996469000034,0.08936300330110152
+Maaradji Runs,Ostovar,Atomic_ParallelToSequence_output_ParallelToSequence_5,300,2,[],"[999, 1999]",,,00:04:42,282.72388469999714,0.09427271913971229
+Maaradji Runs,Ostovar,Atomic_Substitute_output_Substitute_5,300,2,[],"[999, 1999]",,,00:03:42,222.99710219999542,0.07435715311770438
+Maaradji Runs,Ostovar,Atomic_Loop_output_Loop_5,300,2,[],"[999, 1999]",,,00:03:33,213.39925109999604,0.07115680263421008
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_pl,300,2,[],[499],,,00:00:03,3.1966524999879766,0.0031966524999879767
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_cd,300,2,[],[499],,,00:00:03,3.278720800008159,0.0032787208000081593
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_sw,300,2,[498],[499],1.0,1.0,00:00:03,3.730599800008349,0.0037305998000083493
+Maaradji Runs,Ostovar,Atomic_SerialMove_output_SerialMove,300,2,[],"[999, 1999]",,,00:07:11,431.9767358000099,0.14404025868623205
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_cb,300,2,[498],[499],1.0,1.0,00:00:03,3.687639900002978,0.003687639900002978
+Maaradji Runs,Bose,bose_log,300,2,"[1196, 2370, 3552, 4708]","[1199, 2399, 3599, 4799]",1.0,42.5,00:00:21,21.14705369999865,0.003524508949999775
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_re,300,2,[498],[499],1.0,1.0,00:00:03,3.5984954000014113,0.0035984954000014115
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_IOR,300,2,[498],[499],1.0,1.0,00:00:05,5.601314300001832,0.005601314300001832
+Maaradji Runs,Ostovar,Atomic_ConditionalToSequence_output_ConditionalToSequence,300,2,[],"[999, 1999]",,,00:06:30,390.49611949999235,0.13020877609202813
+Maaradji Runs,Ostovar,Composite_IOR_output_IOR,300,2,"[936, 1948]","[999, 1999]",1.0,57.0,00:04:42,282.12038349999057,0.09407148499499518
+Maaradji Runs,Ostovar,Nested_ORI_output_ORI_2,300,2,[],"[999, 1999]",,,00:07:10,430.6366413000069,0.1435934115705258
+Maaradji Runs,Ostovar,Composite_RIO_output_RIO_2,300,2,[],"[999, 1999]",,,00:05:04,304.97739189999993,0.10169302830943645
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_lp,300,2,[498],[499],1.0,1.0,00:00:12,12.212309599999571,0.012212309599999572
+Maaradji Runs,Ostovar,Composite_IRO_output_IRO_2,300,2,[],"[999, 1999]",,,00:05:02,302.0276462000038,0.10070945188396259
+Maaradji Runs,Ostovar,Nested_IOR_output_IOR,300,2,[],"[999, 1999]",,,00:14:31,871.8421466,0.29071095251750584
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_RIO,300,2,[498],[499],1.0,1.0,00:00:04,4.939950799991493,0.004939950799991493
+Maaradji Runs,Ostovar,Atomic_SerialRemoval_output_SerialRemoval,300,2,[1038],"[999, 1999]",0.6666666666666666,39.0,00:04:49,289.79982869999367,0.09663215361787052
+Maaradji Runs,Ostovar,Atomic_ParallelRemoval_output_ParallelRemoval_5,300,2,[],"[999, 1999]",,,00:03:05,185.38284340000246,0.061814886095365944
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_re,300,2,[498],[499],1.0,1.0,00:00:04,4.098819500009995,0.004098819500009995
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_cd,300,2,[],[499],,,00:00:03,3.5280314999981783,0.0035280314999981783
+Maaradji Runs,Ostovar,Nested_IRO_output_IRO,300,2,[],"[999, 1999]",,,00:16:00,960.6059472000052,0.3203087519839964
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_lp,300,2,[498],[499],1.0,1.0,00:00:12,12.119909899993218,0.012119909899993217
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_RIO,300,2,[498],[499],1.0,1.0,00:00:04,4.926711799998884,0.004926711799998884
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_rp,300,2,[498],[499],1.0,1.0,00:00:05,5.161695200004033,0.005161695200004032
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_pm,300,2,[498],[499],1.0,1.0,00:00:04,4.997121099993819,0.004997121099993819
+Maaradji Runs,Ostovar,Composite_OIR_output_OIR_5,300,2,[],"[999, 1999]",,,00:03:49,229.97024890000466,0.07668231040346937
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_pl,300,2,[],[499],,,00:00:03,3.5361768000002485,0.0035361768000002486
+Maaradji Runs,Ostovar,Atomic_SerialMove_output_SerialMove_2,300,2,[],"[999, 1999]",,,00:05:40,340.37480220000725,0.1134960994331468
+Maaradji Runs,Ostovar,Atomic_Frequency_output_Frequency_5,300,2,[],"[999, 1999]",,,00:01:34,94.58867869999085,0.03154007292430505
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_cb,300,2,[498],[499],1.0,1.0,00:00:04,4.699268700001994,0.004699268700001994
+Maaradji Runs,Ostovar,Nested_IOR_output_IOR_2,300,2,[],"[999, 1999]",,,00:09:18,558.9401658999996,0.18637551380460138
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_cf,300,2,[498],[499],1.0,1.0,00:00:04,4.903542000000016,0.004903542000000016
+Maaradji Runs,Ostovar,Atomic_Skip_output_Skip,300,2,[],"[999, 1999]",,,00:06:19,379.83869550000236,0.12665511687229156
+Maaradji Runs,Ostovar,Composite_ROI_output_ROI,300,2,[2018],"[999, 1999]",0.6666666666666666,19.0,00:06:33,393.4403089000116,0.1311904997999372
+Maaradji Runs,Ostovar,Atomic_ConditionalRemoval_output_ConditionalRemoval,300,2,[],"[999, 1999]",,,00:05:05,305.1404230000044,0.1017473901300448
+Maaradji Runs,Ostovar,Atomic_Swap_output_Swap,300,2,"[1022, 1990]","[999, 1999]",1.0,16.0,00:06:09,369.0827031999943,0.12306859059686372
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_IRO,300,2,[498],[499],1.0,1.0,00:00:09,9.966079200006789,0.009966079200006788
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_cb,300,2,[498],[499],1.0,1.0,00:00:04,4.801916900003562,0.004801916900003562
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_IOR,300,2,[498],[499],1.0,1.0,00:00:05,5.888421700001345,0.005888421700001345
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_cf,300,2,[498],[499],1.0,1.0,00:00:05,5.006843099996331,0.005006843099996331
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_OIR,300,2,[498],[499],1.0,1.0,00:00:18,18.940187899992452,0.018940187899992453
+Maaradji Runs,Ostovar,Composite_IRO_output_IRO_5,300,2,[],"[999, 1999]",,,00:04:18,258.8336379999964,0.08630664821607083
+Maaradji Runs,Ostovar,Atomic_Substitute_output_Substitute,300,2,[],"[999, 1999]",,,00:06:03,363.6649508999981,0.12126207099032947
+Maaradji Runs,Ostovar,Atomic_ParallelToSequence_output_ParallelToSequence,300,2,[],"[999, 1999]",,,00:07:28,448.254611700002,0.14946802657552583
+Maaradji Runs,Ostovar,Atomic_ConditionalToSequence_output_ConditionalToSequence_5,300,2,[],"[999, 1999]",,,00:04:15,255.1695619999955,0.08508488229409653
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_re,300,2,[498],[499],1.0,1.0,00:00:04,4.414161699998658,0.004414161699998658
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_pm,300,2,[498],[499],1.0,1.0,00:00:04,4.747434400007478,0.004747434400007478
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_lp,300,2,[498],[499],1.0,1.0,00:00:14,14.353635300009046,0.014353635300009045
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_re,300,2,[498],[499],1.0,1.0,00:00:04,4.804331000006641,0.004804331000006642
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_IOR,300,2,[498],[499],1.0,1.0,00:00:06,6.906918900000164,0.006906918900000164
+Maaradji Runs,Ostovar,Atomic_ParallelMove_output_ParallelMove_5,300,2,[],"[999, 1999]",,,00:04:51,291.03985270000703,0.09704563277759487
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_IOR,300,2,[498],[499],1.0,1.0,00:00:05,5.789000300006592,0.0057890003000065915
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_cf,300,2,[498],[499],1.0,1.0,00:00:05,5.174416000008932,0.005174416000008932
+Maaradji Runs,Ostovar,Nested_ORI_output_ORI_5,300,2,[],"[999, 1999]",,,00:05:52,352.1041422999988,0.11740718316105328
+Maaradji Runs,Ostovar,Composite_OIR_output_OIR_2,300,2,[],"[999, 1999]",,,00:04:40,280.55578909999167,0.0935497796265394
+Maaradji Runs,Ostovar,Nested_RIO_output_RIO,300,2,[],"[999, 1999]",,,00:10:02,602.8934023000038,0.2010314779259766
+Maaradji Runs,Ostovar,Composite_OIR_output_OIR,300,2,[],"[999, 1999]",,,00:05:44,344.74384100000316,0.11495293131043786
+Maaradji Runs,Ostovar,Composite_IRO_output_IRO,300,2,"[1032, 2036]","[999, 1999]",1.0,35.0,00:06:32,392.4749712000048,0.13086861327109198
+Maaradji Runs,Ostovar,Nested_IRO_output_IRO_5,300,2,[],"[999, 1999]",,,00:08:05,485.88659870000265,0.16201620496832367
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_OIR,300,2,[498],[499],1.0,1.0,00:00:18,18.256777200003853,0.018256777200003852
+Maaradji Runs,Ostovar,Atomic_Skip_output_Skip_5,300,2,[],"[999, 1999]",,,00:03:56,236.15866660000756,0.07874580413471409
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_sw,300,2,[498],[499],1.0,1.0,00:00:04,4.672431800005143,0.004672431800005142
+Maaradji Runs,Ostovar,Atomic_ParallelRemoval_output_ParallelRemoval_2,300,2,[],"[999, 1999]",,,00:04:01,241.82391410000855,0.08063484964988614
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_RIO,300,2,[498],[499],1.0,1.0,00:00:05,5.169886199990287,0.005169886199990288
+Maaradji Runs,Ostovar,Nested_ROI_output_ROI,300,2,"[1020, 1976]","[999, 1999]",1.0,22.0,00:05:56,356.51168550000875,0.11887685411804226
+Maaradji Runs,Ostovar,Atomic_ParallelMove_output_ParallelMove,300,2,[],"[999, 1999]",,,00:07:33,453.3645863999991,0.15117191943981298
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_cb,300,2,[498],[499],1.0,1.0,00:00:04,4.838349600002402,0.004838349600002402
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_ROI,300,2,[498],[499],1.0,1.0,00:00:06,6.45664959998976,0.006456649599989759
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_cp,300,2,[498],[499],1.0,1.0,00:00:05,5.650778900002479,0.005650778900002478
+Maaradji Runs,Ostovar,Composite_ORI_output_ORI_2,300,2,[],"[999, 1999]",,,00:08:13,493.39354420000745,0.1645193545181752
+Maaradji Runs,Ostovar,Atomic_Swap_output_Swap_2,300,2,[],"[999, 1999]",,,00:04:50,290.8332167000044,0.09697673114371605
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_ROI,300,2,[498],[499],1.0,1.0,00:00:05,5.5189379999937955,0.005518937999993796
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_ROI,300,2,[498],[499],1.0,1.0,00:00:05,5.747085599999991,0.005747085599999991
+Maaradji Runs,Ostovar,Atomic_Frequency_output_Frequency,300,2,[1990],"[999, 1999]",0.6666666666666666,9.0,00:02:38,158.2373205999902,0.05276336132043688
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_pm,300,2,[498],[499],1.0,1.0,00:00:04,4.962410399995861,0.004962410399995861
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_pl,300,2,[],[499],,,00:00:03,3.517227999996976,0.003517227999996976
+Maaradji Runs,Ostovar,Composite_ORI_output_ORI_5,300,2,[],"[999, 1999]",,,00:06:18,378.06238329999906,0.1260628153717903
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_pl,300,2,[],[499],,,00:00:04,4.089200599992182,0.004089200599992182
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_rp,300,2,[498],[499],1.0,1.0,00:00:05,5.087939000004553,0.005087939000004553
+Maaradji Runs,Ostovar,Nested_IRO_output_IRO_2,300,2,[],"[999, 1999]",,,00:12:01,721.5176530000026,0.24058607969323195
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_re,300,2,[498],[499],1.0,1.0,00:00:04,4.195166399993468,0.004195166399993468
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_cp,300,2,[498],[499],1.0,1.0,00:00:06,6.196871199994348,0.006196871199994348
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_rp,300,2,[498],[499],1.0,1.0,00:00:05,5.101005200005602,0.005101005200005602
+Maaradji Runs,Ostovar,Atomic_ConditionalRemoval_output_ConditionalRemoval_5,300,2,[],"[999, 1999]",,,00:03:11,191.77260739999474,0.06394551763921132
+Maaradji Runs,Ostovar,Composite_RIO_output_RIO,300,2,[],"[999, 1999]",,,00:06:42,402.784983199992,0.13430642987662286
+Maaradji Runs,Ostovar,Nested_ROI_output_ROI_2,300,2,[],"[999, 1999]",,,00:04:28,268.0899012000009,0.08939309809936676
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_cf,300,2,[498],[499],1.0,1.0,00:00:04,4.792725299994345,0.004792725299994345
+Maaradji Runs,Ostovar,Composite_IOR_output_IOR_5,300,2,[],"[999, 1999]",,,00:02:54,174.03442660000292,0.05803081913971421
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_IOR,300,2,[498],[499],1.0,1.0,00:00:06,6.606286700000055,0.006606286700000055
+Maaradji Runs,Ostovar,Atomic_SerialRemoval_output_SerialRemoval_2,300,2,[],"[999, 1999]",,,00:04:13,253.2839660000027,0.08445614071357209
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_lp,300,2,[498],[499],1.0,1.0,00:00:13,13.425040200003423,0.013425040200003423
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_IRO,300,2,[498],[499],1.0,1.0,00:00:10,10.316379800002323,0.010316379800002324
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_pl,300,2,[],[499],,,00:00:03,3.791384399999515,0.0037913843999995154
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_sw,300,2,[498],[499],1.0,1.0,00:00:04,4.503769200004172,0.0045037692000041716
+Maaradji Runs,Ostovar,Nested_RIO_output_RIO_5,300,2,[],"[999, 1999]",,,00:06:20,380.1757935999922,0.1267675203734552
+Maaradji Runs,Ostovar,Atomic_Loop_output_Loop,300,2,[],"[999, 1999]",,,00:06:34,394.7623082000064,0.13163131317105914
+Maaradji Runs,Ostovar,Nested_OIR_output_OIR_5,300,2,[],"[999, 1999]",,,00:04:40,280.0061301999958,0.09336649889963182
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_OIR,300,2,[498],[499],1.0,1.0,00:00:18,18.37181879999116,0.01837181879999116
+Maaradji Runs,Ostovar,Atomic_ConditionalMove_output_ConditionalMove,300,2,[],"[999, 1999]",,,00:07:48,468.5666576000076,0.15624096618873212
+Maaradji Runs,Ostovar,Atomic_ConditionalMove_output_ConditionalMove_5,300,2,[],"[999, 1999]",,,00:04:58,298.3746173999971,0.09949136958986231
+Maaradji Runs,Ostovar,Atomic_ParallelMove_output_ParallelMove_2,300,2,[],"[999, 1999]",,,00:06:08,368.8541867000022,0.12299239303101106
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_cd,300,2,[],[499],,,00:00:04,4.292244800002663,0.004292244800002664
+Maaradji Runs,Ostovar,Nested_ORI_output_ORI,300,2,[],"[999, 1999]",,,00:10:07,607.9754647999944,0.20272606362120518
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_lp,300,2,[498],[499],1.0,1.0,00:00:12,12.620083600006183,0.012620083600006183
+Maaradji Runs,Ostovar,Atomic_ConditionalToSequence_output_ConditionalToSequence_2,300,2,[],"[999, 1999]",,,00:05:10,310.79421320000256,0.1036326152717581
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_ROI,300,2,[498],[499],1.0,1.0,00:00:05,5.620742699989933,0.005620742699989933
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_RIO,300,2,[498],[499],1.0,1.0,00:00:05,5.264971900003729,0.00526497190000373
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_cf,300,2,[498],[499],1.0,1.0,00:00:04,4.7581100999959745,0.0047581100999959745
+Maaradji Runs,Ostovar,Nested_IOR_output_IOR_5,300,2,[],"[999, 1999]",,,00:06:38,398.4702011000045,0.13286768959653367
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_cd,300,2,[],[499],,,00:00:03,3.655552100011846,0.003655552100011846
+Maaradji Runs,Ostovar,Atomic_ConditionalRemoval_output_ConditionalRemoval_2,300,2,[],"[999, 1999]",,,00:04:06,246.85427930000878,0.08231219716572484
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_IRO,300,2,[498],[499],1.0,1.0,00:00:09,9.57217810000293,0.00957217810000293
+Maaradji Runs,Ostovar,Composite_RIO_output_RIO_5,300,2,[],"[999, 1999]",,,00:04:15,255.33520250000583,0.08514011420473686
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_cb,300,2,[502],[499],1.0,3.0,00:00:04,4.8775158999924315,0.004877515899992432
+Maaradji Runs,Ostovar,Atomic_SerialRemoval_output_SerialRemoval_5,300,2,[],"[999, 1999]",,,00:03:31,211.85351579998678,0.07064138572857179
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_cd,300,2,[],[499],,,00:00:03,3.7144865000009304,0.0037144865000009303
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_OIR,300,2,[498],[499],1.0,1.0,00:00:19,19.045293000002857,0.019045293000002857
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_IRO,300,2,[498],[499],1.0,1.0,00:00:09,9.96897099999478,0.00996897099999478
+Maaradji Runs,Ostovar,Composite_ORI_output_ORI,300,2,[],"[999, 1999]",,,00:09:53,593.1304861000099,0.19777608739580188
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_sw,300,2,[498],[499],1.0,1.0,00:00:04,4.3455748000124,0.0043455748000124006
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_ROI,300,2,[498],[499],1.0,1.0,00:00:06,6.340902700001607,0.006340902700001607
+Maaradji Runs,Ostovar,Atomic_ParallelToSequence_output_ParallelToSequence_2,300,2,[],"[999, 1999]",,,00:06:04,364.14068419999967,0.12142070163387784
+Maaradji Runs,Ceravolo,sudden_trace_noise0_1000_pm,300,2,[498],[499],1.0,1.0,00:00:04,4.744396900001448,0.004744396900001448
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_sw,300,2,[498],[499],1.0,1.0,00:00:04,4.45188490000146,0.004451884900001459
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_RIO,300,2,[498],[499],1.0,1.0,00:00:05,5.692922900008853,0.005692922900008853
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_rp,300,2,[498],[499],1.0,1.0,00:00:05,5.191619899997022,0.005191619899997022
+Maaradji Runs,Ostovar,Composite_IOR_output_IOR_2,300,2,[],"[999, 1999]",,,00:03:55,235.4823924000084,0.07852030423474772
+Maaradji Runs,Ostovar,Nested_ROI_output_ROI_5,300,2,[],"[999, 1999]",,,00:03:32,212.26263950001157,0.07077780576859338
+Maaradji Runs,Ceravolo,sudden_trace_noise5_1000_IRO,300,2,[498],[499],1.0,1.0,00:00:10,10.287423200003104,0.010287423200003105
+Maaradji Runs,Ostovar,Atomic_Swap_output_Swap_5,300,2,[],"[999, 1999]",,,00:03:35,215.02952399999776,0.0717004081360446
+Maaradji Runs,Ostovar,Atomic_Substitute_output_Substitute_2,300,2,[],"[999, 1999]",,,00:04:48,288.0713345999975,0.09605579679893214
+Maaradji Runs,Ostovar,Composite_ROI_output_ROI_2,300,2,[],"[999, 1999]",,,00:04:58,298.602403900004,0.09956732374124841
+Maaradji Runs,Ostovar,Atomic_ParallelRemoval_output_ParallelRemoval,300,2,[2052],"[999, 1999]",0.6666666666666666,53.0,00:04:47,287.51746119999734,0.09587111077025587
+Maaradji Runs,Ostovar,Atomic_Loop_output_Loop_2,300,2,[],"[999, 1999]",,,00:04:16,256.20631870000216,0.0854305830943655
+Maaradji Runs,Ostovar,Nested_OIR_output_OIR_2,300,2,[],"[999, 1999]",,,00:04:35,275.4746681999968,0.09185550790263315
+Maaradji Runs,Ostovar,Composite_ROI_output_ROI_5,300,2,[],"[999, 1999]",,,00:04:00,240.7529413000011,0.08027773967989367
+Maaradji Runs,Ostovar,Atomic_ConditionalMove_output_ConditionalMove_2,300,2,[],"[999, 1999]",,,00:04:35,275.6889225999912,0.09192694984994705
+Maaradji Runs,Ostovar,Nested_OIR_output_OIR,300,2,[],"[999, 1999]",,,00:04:35,275.7652759000048,0.09195240943648042
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_cp,300,2,[498],[499],1.0,1.0,00:00:05,5.850018199998885,0.005850018199998886
+Maaradji Runs,Ceravolo,sudden_trace_noise20_1000_cp,300,2,[498],[499],1.0,1.0,00:00:04,4.696731699994416,0.004696731699994416
+Maaradji Runs,Ceravolo,sudden_trace_noise15_1000_OIR,300,2,[498],[499],1.0,1.0,00:00:18,18.822467700010748,0.018822467700010746
+Maaradji Runs,Ostovar,Atomic_Frequency_output_Frequency_2,300,2,[],"[999, 1999]",,,00:01:40,100.7009226000082,0.03357816692231017
+Maaradji Runs,Ceravolo,sudden_trace_noise10_1000_pm,300,2,[498],[499],1.0,1.0,00:00:04,4.334325400006492,0.0043343254000064915
+Maaradji Runs,Ostovar,Atomic_Skip_output_Skip_2,300,2,[],"[999, 1999]",,,00:02:57,177.41305430000648,0.05915740390130259

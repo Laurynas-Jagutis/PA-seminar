@@ -1,0 +1,152 @@
+Algorithm,Log Source,Log,Window Size,SW Step Size,Detected Changepoints,Actual Changepoints for Log,F1-Score,Average Lag,Duration,Duration (Seconds),Seconds per Case
+Earth Mover's Distance,Ostovar,Atomic_SerialRemoval_output_SerialRemoval,100,2,"[np.int64(924), np.int64(1266), np.int64(1946), np.int64(2198)]","[999, 1999]",0.6666666666666666,64.0,00:02:36,156.37399729999015,0.05214204644881299
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_cd,100,2,[],[499],,,00:00:00,0.2758756999974139,0.0002758756999974139
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_cb,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.4921011000114959,0.0004921011000114958
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_cp,100,2,[np.int64(444)],[499],1.0,55.0,00:00:00,0.7717747999995481,0.0007717747999995481
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_IRO,100,2,[np.int64(444)],[499],1.0,55.0,00:00:01,1.0123902999912389,0.0010123902999912388
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_IRO,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.8377089999848977,0.0008377089999848977
+Earth Mover's Distance,Ostovar,Atomic_Skip_output_Skip,100,2,"[np.int64(964), np.int64(1138), np.int64(1648), np.int64(1952)]","[999, 1999]",0.6666666666666666,41.0,00:03:06,186.18710449998616,0.06208306252083567
+Earth Mover's Distance,Ostovar,Atomic_Loop_output_Loop,100,2,"[np.int64(962), np.int64(1932), np.int64(2310)]","[999, 1999]",0.8,52.0,00:03:10,190.28384380001808,0.0634490976325502
+Earth Mover's Distance,Ostovar,Composite_IRO_output_IRO_5,100,2,"[np.int64(202), np.int64(692), np.int64(950), np.int64(1944), np.int64(2802)]","[999, 1999]",0.5714285714285715,52.0,00:03:28,208.89396660000784,0.06965454038012932
+Earth Mover's Distance,Ostovar,Atomic_ParallelToSequence_output_ParallelToSequence_2,100,2,"[np.int64(942), np.int64(1948), np.int64(2702)]","[999, 1999]",0.8,54.0,00:03:48,228.29468319998705,0.07612360226741816
+Earth Mover's Distance,Ostovar,Atomic_SerialMove_output_SerialMove,100,2,"[np.int64(152), np.int64(950), np.int64(1384), np.int64(1950)]","[999, 1999]",0.6666666666666666,49.0,00:03:32,212.34365630001412,0.07080482037346253
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_pm,100,2,[],[499],,,00:00:00,0.3910269000043627,0.0003910269000043627
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_cb,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.6119181000103708,0.0006119181000103708
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_cp,100,2,[np.int64(442)],[499],1.0,57.0,00:00:00,0.4910045999858994,0.0004910045999858994
+Earth Mover's Distance,Ostovar,Atomic_Swap_output_Swap,100,2,"[np.int64(930), np.int64(1938)]","[999, 1999]",1.0,65.0,00:03:02,182.87095809998573,0.06097731180392989
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_ROI,100,2,[np.int64(478)],[499],1.0,21.0,00:00:01,1.0635954999888781,0.001063595499988878
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_cp,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.7038113000162411,0.0007038113000162412
+Earth Mover's Distance,Ostovar,Atomic_ParallelMove_output_ParallelMove,100,2,"[np.int64(612), np.int64(938), np.int64(1946)]","[999, 1999]",0.8,57.0,00:03:33,213.44290729999193,0.0711713595531817
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_lp,100,2,[np.int64(454)],[499],1.0,45.0,00:00:01,1.3935070000006817,0.0013935070000006817
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_rp,100,2,[],[499],,,00:00:00,0.4678102000034414,0.0004678102000034414
+Earth Mover's Distance,Ostovar,Atomic_ConditionalToSequence_output_ConditionalToSequence_2,100,2,"[np.int64(952), np.int64(1326), np.int64(1956), np.int64(2570)]","[999, 1999]",0.6666666666666666,45.0,00:03:23,203.16195189999416,0.06774323171056824
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_lp,100,2,[np.int64(454)],[499],1.0,45.0,00:00:01,1.2386079000134487,0.0012386079000134486
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_cd,100,2,[],[499],,,00:00:00,0.43804249999811873,0.00043804249999811873
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_ROI,100,2,[np.int64(492)],[499],1.0,7.0,00:00:00,0.8270981999812648,0.0008270981999812648
+Earth Mover's Distance,Ostovar,Composite_OIR_output_OIR,100,2,"[np.int64(950), np.int64(1588), np.int64(1938), np.int64(2770)]","[999, 1999]",0.6666666666666666,55.0,00:02:55,175.42803870001808,0.05849551140380729
+Earth Mover's Distance,Ostovar,Atomic_Substitute_output_Substitute_2,100,2,"[np.int64(946), np.int64(1530), np.int64(1942), np.int64(2554)]","[999, 1999]",0.6666666666666666,55.0,00:03:05,185.86578979998012,0.061975921907295804
+Earth Mover's Distance,Ostovar,Nested_RIO_output_RIO,100,2,"[np.int64(954), np.int64(1940), np.int64(2486)]","[999, 1999]",0.8,52.0,00:04:19,259.21537629998056,0.08643393674557538
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_IRO,100,2,[np.int64(448)],[499],1.0,51.0,00:00:01,1.1768420000153128,0.0011768420000153128
+Earth Mover's Distance,Ostovar,Atomic_ParallelMove_output_ParallelMove_5,100,2,"[np.int64(924), np.int64(1942), np.int64(2494)]","[999, 1999]",0.8,66.0,00:03:48,228.3026296000171,0.07612625195065592
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_pm,100,2,[],[499],,,00:00:00,0.5161118999822065,0.0005161118999822066
+Earth Mover's Distance,Ostovar,Atomic_SerialMove_output_SerialMove_5,100,2,"[np.int64(944), np.int64(1384), np.int64(1950)]","[999, 1999]",0.8,52.0,00:03:49,229.8514338999812,0.07664269219739286
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_rp,100,2,[],[499],,,00:00:00,0.6081803000124637,0.0006081803000124637
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_rp,100,2,[],[499],,,00:00:00,0.3990924000099767,0.0003990924000099767
+Earth Mover's Distance,Ostovar,Atomic_Loop_output_Loop_2,100,2,"[np.int64(956), np.int64(1932)]","[999, 1999]",1.0,55.0,00:03:20,200.06493999998202,0.06671055018338846
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_lp,100,2,[np.int64(454)],[499],1.0,45.0,00:00:01,1.7109850999841,0.0017109850999841001
+Earth Mover's Distance,Ostovar,Atomic_ConditionalRemoval_output_ConditionalRemoval,100,2,"[np.int64(1348), np.int64(2490)]","[999, 1999]",,,00:02:40,160.24250789999496,0.053431979959984985
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_OIR,100,2,[np.int64(446)],[499],1.0,53.0,00:00:02,2.3210225000220817,0.0023210225000220817
+Earth Mover's Distance,Ostovar,Composite_OIR_output_OIR_2,100,2,"[np.int64(944), np.int64(1590), np.int64(1938), np.int64(2770)]","[999, 1999]",0.6666666666666666,58.0,00:03:03,183.0643420999986,0.061041794631543383
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_pl,100,2,[],[499],,,00:00:00,0.38190410000970587,0.0003819041000097059
+Earth Mover's Distance,Ostovar,Atomic_ConditionalToSequence_output_ConditionalToSequence_5,100,2,"[np.int64(964), np.int64(1326), np.int64(1954), np.int64(2632)]","[999, 1999]",0.6666666666666666,40.0,00:03:38,218.1726332999824,0.07274846058685643
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_cf,100,2,[],[499],,,00:00:00,0.38135719997808337,0.0003813571999780834
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_cb,100,2,[np.int64(452)],[499],1.0,47.0,00:00:00,0.7740391000115778,0.0007740391000115778
+Earth Mover's Distance,Ostovar,Nested_ORI_output_ORI,100,2,"[np.int64(242), np.int64(936), np.int64(1932)]","[999, 1999]",0.8,65.0,00:04:16,256.60504139997647,0.08556353497831826
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_re,100,2,[np.int64(450)],[499],1.0,49.0,00:00:00,0.6954239000042435,0.0006954239000042435
+Earth Mover's Distance,Ostovar,Atomic_Substitute_output_Substitute_5,100,2,"[np.int64(938), np.int64(1518), np.int64(1938), np.int64(2324)]","[999, 1999]",0.6666666666666666,61.0,00:03:16,196.55570830000215,0.06554041623874697
+Earth Mover's Distance,Ostovar,Atomic_SerialRemoval_output_SerialRemoval_2,100,2,"[np.int64(924), np.int64(1948)]","[999, 1999]",1.0,63.0,00:02:48,168.73682130000088,0.05626436188729606
+Earth Mover's Distance,Ostovar,Nested_IOR_output_IOR_5,100,2,"[np.int64(922), np.int64(1390), np.int64(1878)]","[999, 1999]",0.8,99.0,00:06:29,389.1864108000009,0.1297720609536515
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_ROI,100,2,"[np.int64(170), np.int64(488)]",[499],0.6666666666666666,11.0,00:00:01,1.1056003000121564,0.0011056003000121564
+Earth Mover's Distance,Ostovar,Composite_IRO_output_IRO_2,100,2,"[np.int64(942), np.int64(1944)]","[999, 1999]",1.0,56.0,00:03:24,204.05664620001335,0.06804156258753363
+Earth Mover's Distance,Ostovar,Nested_IRO_output_IRO_2,100,2,"[np.int64(940), np.int64(1916)]","[999, 1999]",1.0,71.0,00:06:41,401.3915649999981,0.13384180226742184
+Earth Mover's Distance,Ostovar,Atomic_Frequency_output_Frequency_5,100,2,"[np.int64(756), np.int64(952), np.int64(1970), np.int64(2428)]","[999, 1999]",0.6666666666666666,38.0,00:01:51,111.29863889998524,0.03711191693897474
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_RIO,100,2,[],[499],,,00:00:00,0.7095739000069443,0.0007095739000069443
+Earth Mover's Distance,Ostovar,Nested_IOR_output_IOR,100,2,"[np.int64(924), np.int64(1914)]","[999, 1999]",1.0,80.0,00:05:57,357.46843029998126,0.11919587539179102
+Earth Mover's Distance,Ostovar,Atomic_ConditionalToSequence_output_ConditionalToSequence,100,2,"[np.int64(442), np.int64(952), np.int64(1140), np.int64(1326), np.int64(1956), np.int64(2102), np.int64(2570)]","[999, 1999]",0.4444444444444445,45.0,00:03:22,202.54363879997982,0.06753705861953312
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_RIO,100,2,[],[499],,,00:00:00,0.6167757000075653,0.0006167757000075653
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_RIO,100,2,[],[499],,,00:00:00,0.4039274000097066,0.0004039274000097066
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_IOR,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.5741380999970715,0.0005741380999970716
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_pl,100,2,[],[499],,,00:00:00,0.3184113999886904,0.0003184113999886904
+Earth Mover's Distance,Ostovar,Atomic_Frequency_output_Frequency,100,2,"[np.int64(756), np.int64(954), np.int64(1504), np.int64(1974)]","[999, 1999]",0.6666666666666666,35.0,00:01:44,104.11895390000427,0.03471789059686704
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_sw,100,2,[np.int64(442)],[499],1.0,57.0,00:00:00,0.6646210000035353,0.0006646210000035353
+Earth Mover's Distance,Ostovar,Atomic_ParallelMove_output_ParallelMove_2,100,2,"[np.int64(948), np.int64(1310), np.int64(1908)]","[999, 1999]",0.8,71.0,00:03:54,234.335671000008,0.0781379363121067
+Earth Mover's Distance,Ostovar,Nested_RIO_output_RIO_2,100,2,"[np.int64(954), np.int64(1940), np.int64(2462)]","[999, 1999]",0.8,52.0,00:04:40,280.9373091000016,0.09367699536512224
+Earth Mover's Distance,Ostovar,Nested_ORI_output_ORI_5,100,2,"[np.int64(936), np.int64(1932)]","[999, 1999]",1.0,65.0,00:04:46,286.1871372000023,0.09542752157385873
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_lp,100,2,[np.int64(454)],[499],1.0,45.0,00:00:01,1.914017299975967,0.001914017299975967
+Earth Mover's Distance,Ostovar,Atomic_ConditionalMove_output_ConditionalMove_2,100,2,"[np.int64(950), np.int64(1944)]","[999, 1999]",1.0,52.0,00:03:54,234.24934209999628,0.07810915041680436
+Earth Mover's Distance,Ostovar,Nested_ROI_output_ROI,100,2,"[np.int64(188), np.int64(954), np.int64(2300)]","[999, 1999]",0.4,45.0,00:03:03,183.62003419999382,0.061227087095696506
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_IOR,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.5319059999892488,0.0005319059999892488
+Earth Mover's Distance,Ostovar,Atomic_ParallelToSequence_output_ParallelToSequence_5,100,2,"[np.int64(942), np.int64(1948)]","[999, 1999]",1.0,54.0,00:04:07,247.45153879999998,0.08251135005001667
+Earth Mover's Distance,Ostovar,Composite_ORI_output_ORI_2,100,2,"[np.int64(928), np.int64(1932)]","[999, 1999]",1.0,69.0,00:05:38,338.4135662000044,0.11284213611203882
+Earth Mover's Distance,Ostovar,Composite_ROI_output_ROI_2,100,2,"[np.int64(950), np.int64(1940), np.int64(2586)]","[999, 1999]",0.8,54.0,00:03:28,208.50494019998587,0.06952482167388659
+Earth Mover's Distance,Ostovar,Composite_ORI_output_ORI,100,2,"[np.int64(928), np.int64(1502), np.int64(1932)]","[999, 1999]",0.8,69.0,00:05:28,328.0714335000084,0.10939360903634826
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_rp,100,2,[],[499],,,00:00:00,0.6140422000025865,0.0006140422000025865
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_pl,100,2,[],[499],,,00:00:00,0.40638709999620914,0.00040638709999620915
+Earth Mover's Distance,Ostovar,Atomic_Loop_output_Loop_5,100,2,"[np.int64(962), np.int64(1954), np.int64(2310)]","[999, 1999]",0.8,41.0,00:03:34,214.68171710000024,0.07158443384461495
+Earth Mover's Distance,Ostovar,Atomic_Swap_output_Swap_2,100,2,"[np.int64(370), np.int64(930), np.int64(1606), np.int64(1938)]","[999, 1999]",0.6666666666666666,65.0,00:03:18,198.85041069998988,0.06630557209069353
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_OIR,100,2,[np.int64(446)],[499],1.0,53.0,00:00:02,2.452669899998,0.002452669899998
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_OIR,100,2,[np.int64(446)],[499],1.0,53.0,00:00:02,2.5442092000157572,0.0025442092000157574
+Earth Mover's Distance,Ostovar,Atomic_ConditionalMove_output_ConditionalMove,100,2,"[np.int64(950), np.int64(1944)]","[999, 1999]",1.0,52.0,00:03:45,225.44525020002038,0.07517347455819286
+Earth Mover's Distance,Ostovar,Nested_IOR_output_IOR_2,100,2,"[np.int64(924), np.int64(1878)]","[999, 1999]",1.0,98.0,00:06:17,377.5980516000127,0.1259079865288472
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_OIR,100,2,[np.int64(446)],[499],1.0,53.0,00:00:02,2.7298427999776322,0.0027298427999776324
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_cd,100,2,[],[499],,,00:00:00,0.39601510000647977,0.00039601510000647976
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_pm,100,2,[np.int64(414)],[499],1.0,85.0,00:00:00,0.6461488999775611,0.000646148899977561
+Earth Mover's Distance,Ostovar,Nested_ROI_output_ROI_5,100,2,"[np.int64(502), np.int64(954), np.int64(1938), np.int64(2328)]","[999, 1999]",0.6666666666666666,53.0,00:03:19,199.49138800002402,0.06651930243415273
+Earth Mover's Distance,Ostovar,Composite_IOR_output_IOR_2,100,2,"[np.int64(938), np.int64(1344), np.int64(1934)]","[999, 1999]",0.8,63.0,00:02:53,173.63189230000717,0.05789659629876864
+Earth Mover's Distance,Ostovar,Atomic_ParallelRemoval_output_ParallelRemoval_5,100,2,"[np.int64(1002), np.int64(1956)]","[999, 1999]",1.0,23.0,00:02:55,175.41186530000414,0.058490118472825654
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_pm,100,2,[],[499],,,00:00:00,0.5483189999940805,0.0005483189999940805
+Earth Mover's Distance,Ostovar,Composite_RIO_output_RIO,100,2,"[np.int64(942), np.int64(1944), np.int64(2214)]","[999, 1999]",0.8,56.0,00:03:24,204.2929609999992,0.06812036045348423
+Earth Mover's Distance,Ostovar,Atomic_SerialMove_output_SerialMove_2,100,2,"[np.int64(446), np.int64(950), np.int64(1384), np.int64(1942)]","[999, 1999]",0.6666666666666666,53.0,00:03:52,232.10547969999607,0.07739429133044216
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_cf,100,2,[],[499],,,00:00:00,0.4724875000247266,0.0004724875000247266
+Earth Mover's Distance,Ostovar,Atomic_ParallelRemoval_output_ParallelRemoval_2,100,2,"[np.int64(1002), np.int64(1914)]","[999, 1999]",1.0,44.0,00:02:48,168.46592019998934,0.056174031410466604
+Earth Mover's Distance,Ostovar,Nested_RIO_output_RIO_5,100,2,"[np.int64(950), np.int64(1940)]","[999, 1999]",1.0,54.0,00:04:51,291.6932112000068,0.09726349156385687
+Earth Mover's Distance,Ostovar,Nested_OIR_output_OIR,100,2,"[np.int64(950), np.int64(1948)]","[999, 1999]",1.0,50.0,00:03:25,205.69674879999366,0.06858844574858075
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_ROI,100,2,[np.int64(478)],[499],1.0,21.0,00:00:01,1.0375480000220705,0.0010375480000220706
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_re,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.7177538000105415,0.0007177538000105414
+Earth Mover's Distance,Ostovar,Composite_IRO_output_IRO,100,2,"[np.int64(950), np.int64(1944), np.int64(2106)]","[999, 1999]",0.8,52.0,00:03:20,200.6675156999845,0.06691147572523658
+Earth Mover's Distance,Ostovar,Nested_ORI_output_ORI_2,100,2,"[np.int64(242), np.int64(936), np.int64(1932)]","[999, 1999]",0.8,65.0,00:04:33,273.78551320001134,0.09129226848950028
+Earth Mover's Distance,Ostovar,Composite_ROI_output_ROI_5,100,2,"[np.int64(950), np.int64(1940), np.int64(2626)]","[999, 1999]",0.8,54.0,00:03:34,214.48936750000576,0.07152029593197924
+Earth Mover's Distance,Ostovar,Composite_IOR_output_IOR_5,100,2,"[np.int64(504), np.int64(938), np.int64(1942)]","[999, 1999]",0.8,59.0,00:03:05,185.0631194000016,0.06170827589196452
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_IOR,100,2,[np.int64(444)],[499],1.0,55.0,00:00:00,0.816481300018495,0.0008164813000184949
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_re,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.557585200003814,0.000557585200003814
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_pl,100,2,[],[499],,,00:00:00,0.5433275000250433,0.0005433275000250433
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_cd,100,2,[],[499],,,00:00:00,0.2937816999910865,0.0002937816999910865
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_cf,100,2,[],[499],,,00:00:00,0.6155682999815326,0.0006155682999815326
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_cf,100,2,[],[499],,,00:00:00,0.5276172000158112,0.0005276172000158113
+Earth Mover's Distance,Ostovar,Nested_ROI_output_ROI_2,100,2,[np.int64(954)],"[999, 1999]",0.6666666666666666,45.0,00:03:13,193.4070083000115,0.06449049959987047
+Earth Mover's Distance,Ostovar,Atomic_Swap_output_Swap_5,100,2,"[np.int64(946), np.int64(1938)]","[999, 1999]",1.0,57.0,00:03:25,205.6645784000284,0.06857771870624488
+Earth Mover's Distance,Ostovar,Atomic_Frequency_output_Frequency_2,100,2,"[np.int64(954), np.int64(1528), np.int64(1974), np.int64(2434)]","[999, 1999]",0.6666666666666666,35.0,00:01:50,110.22426540000015,0.036753673024341495
+Earth Mover's Distance,Ostovar,Nested_IRO_output_IRO_5,100,2,"[np.int64(940), np.int64(1916)]","[999, 1999]",1.0,71.0,00:06:25,385.29582240001764,0.1284747657219132
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_OIR,100,2,[np.int64(446)],[499],1.0,53.0,00:00:02,2.379017700004624,0.0023790177000046243
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_sw,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.48159640000085346,0.00048159640000085345
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_sw,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.5817207999934908,0.0005817207999934908
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_RIO,100,2,[],[499],,,00:00:00,0.5115751999837812,0.0005115751999837812
+Earth Mover's Distance,Ostovar,Composite_RIO_output_RIO_2,100,2,"[np.int64(942), np.int64(1944)]","[999, 1999]",1.0,56.0,00:03:35,215.05658350000158,0.07170943097699285
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_cb,100,2,[np.int64(452)],[499],1.0,47.0,00:00:00,0.7437756000144873,0.0007437756000144873
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_RIO,100,2,[np.int64(440)],[499],1.0,59.0,00:00:00,0.6384634000132792,0.0006384634000132791
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_ROI,100,2,[np.int64(478)],[499],1.0,21.0,00:00:00,0.7429555999988224,0.0007429555999988224
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_sw,100,2,"[np.int64(292), np.int64(446)]",[499],0.6666666666666666,53.0,00:00:00,0.6489318000094499,0.0006489318000094499
+Earth Mover's Distance,Ostovar,Composite_IOR_output_IOR,100,2,"[np.int64(322), np.int64(938), np.int64(1318), np.int64(1942)]","[999, 1999]",0.6666666666666666,59.0,00:02:45,165.89295160002075,0.05531608922975017
+Earth Mover's Distance,Ostovar,Atomic_Skip_output_Skip_2,100,2,"[np.int64(964), np.int64(1950), np.int64(2456)]","[999, 1999]",0.8,42.0,00:03:24,204.66272419999586,0.06824365595198262
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_rp,100,2,[],[499],,,00:00:00,0.7084903000213671,0.0007084903000213671
+Earth Mover's Distance,Ostovar,Nested_IRO_output_IRO,100,2,"[np.int64(940), np.int64(1916)]","[999, 1999]",1.0,71.0,00:05:40,340.9332876999979,0.113682323341113
+Earth Mover's Distance,Ostovar,Nested_OIR_output_OIR_5,100,2,"[np.int64(952), np.int64(1926)]","[999, 1999]",1.0,60.0,00:03:39,219.83505200000945,0.07330278492831259
+Earth Mover's Distance,Ostovar,Composite_OIR_output_OIR_5,100,2,"[np.int64(942), np.int64(1364), np.int64(1938), np.int64(2614)]","[999, 1999]",0.6666666666666666,59.0,00:03:14,194.0047290000075,0.06468980626875875
+Earth Mover's Distance,Ceravolo,sudden_trace_noise10_1000_lp,100,2,[np.int64(462)],[499],1.0,37.0,00:00:01,1.7124428999959491,0.001712442899995949
+Earth Mover's Distance,Ostovar,Atomic_ParallelRemoval_output_ParallelRemoval,100,2,"[np.int64(1002), np.int64(1690), np.int64(1956)]","[999, 1999]",0.8,23.0,00:02:41,161.3558640999836,0.05380322244080813
+Earth Mover's Distance,Ostovar,Composite_ROI_output_ROI,100,2,"[np.int64(950), np.int64(1940), np.int64(2620)]","[999, 1999]",0.8,54.0,00:03:19,199.32576790000894,0.06646407732577823
+Earth Mover's Distance,Ostovar,Atomic_ParallelToSequence_output_ParallelToSequence,100,2,[],"[999, 1999]",,,00:03:36,216.07151020001038,0.07204785268423154
+Earth Mover's Distance,Ostovar,Atomic_ConditionalRemoval_output_ConditionalRemoval_2,100,2,[np.int64(946)],"[999, 1999]",0.6666666666666666,53.0,00:02:49,169.56307820000802,0.05653987269089964
+Earth Mover's Distance,Ostovar,Atomic_ConditionalRemoval_output_ConditionalRemoval_5,100,2,"[np.int64(946), np.int64(1934)]","[999, 1999]",1.0,59.0,00:02:54,174.34424239999498,0.05813412550850116
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_cp,100,2,[np.int64(442)],[499],1.0,57.0,00:00:00,0.6724385000125039,0.000672438500012504
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_re,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.48487309998017736,0.0004848730999801774
+Earth Mover's Distance,Ostovar,Atomic_Skip_output_Skip_5,100,2,"[np.int64(964), np.int64(1918), np.int64(2432), np.int64(2666)]","[999, 1999]",0.6666666666666666,58.0,00:03:09,189.52874999999767,0.0631973157719232
+Earth Mover's Distance,Ostovar,Atomic_Substitute_output_Substitute,100,2,"[np.int64(946), np.int64(1942), np.int64(2336)]","[999, 1999]",0.8,55.0,00:02:49,169.4042023999791,0.056486896432137085
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_IRO,100,2,[np.int64(446)],[499],1.0,53.0,00:00:01,1.2205648999952246,0.0012205648999952246
+Earth Mover's Distance,Ostovar,Atomic_ConditionalMove_output_ConditionalMove_5,100,2,"[np.int64(950), np.int64(1436), np.int64(1944)]","[999, 1999]",0.8,52.0,00:03:13,193.92030279999017,0.06466165481826948
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_cp,100,2,[np.int64(442)],[499],1.0,57.0,00:00:00,0.782689500018023,0.0007826895000180229
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_cd,100,2,[],[499],,,00:00:00,0.32592279999516904,0.00032592279999516904
+Earth Mover's Distance,Ostovar,Atomic_SerialRemoval_output_SerialRemoval_5,100,2,"[np.int64(924), np.int64(1954), np.int64(2600)]","[999, 1999]",0.8,60.0,00:02:29,149.65746620000573,0.04990245621874149
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_IOR,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.7886711000173818,0.0007886711000173819
+Earth Mover's Distance,Bose,bose_log,100,2,"[np.int64(1192), np.int64(1466), np.int64(2402), np.int64(3596), np.int64(5256)]","[1199, 2399, 3599, 4799]",0.6666666666666665,4.333333333333333,00:00:47,47.976364900008775,0.00799606081666813
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_cf,100,2,[],[499],,,00:00:00,0.4482504999905359,0.0004482504999905359
+Earth Mover's Distance,Ostovar,Composite_RIO_output_RIO_5,100,2,"[np.int64(942), np.int64(1944)]","[999, 1999]",1.0,56.0,00:02:23,143.58204690000275,0.047876641180394384
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_sw,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.42903349999687634,0.00042903349999687636
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_pl,100,2,[],[499],,,00:00:00,0.5061601999914274,0.0005061601999914274
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_re,100,2,[np.int64(446)],[499],1.0,53.0,00:00:00,0.8018603000091389,0.0008018603000091389
+Earth Mover's Distance,Ostovar,Composite_ORI_output_ORI_5,100,2,"[np.int64(932), np.int64(1500), np.int64(1932)]","[999, 1999]",0.8,67.0,00:03:14,194.2179158999934,0.06476089226408582
+Earth Mover's Distance,Ostovar,Nested_OIR_output_OIR_2,100,2,"[np.int64(950), np.int64(1556), np.int64(1928), np.int64(2282), np.int64(2776)]","[999, 1999]",0.5714285714285715,60.0,00:02:06,126.39818639997975,0.042146777725901884
+Earth Mover's Distance,Ceravolo,sudden_trace_noise20_1000_IOR,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.9865960000024643,0.0009865960000024643
+Earth Mover's Distance,Ceravolo,sudden_trace_noise15_1000_IRO,100,2,[np.int64(448)],[499],1.0,51.0,00:00:01,1.1500933000061195,0.0011500933000061196
+Earth Mover's Distance,Ceravolo,sudden_trace_noise5_1000_pm,100,2,[],[499],,,00:00:00,0.514482800004771,0.000514482800004771
+Earth Mover's Distance,Ceravolo,sudden_trace_noise0_1000_cb,100,2,[np.int64(448)],[499],1.0,51.0,00:00:00,0.5889387000061106,0.0005889387000061106

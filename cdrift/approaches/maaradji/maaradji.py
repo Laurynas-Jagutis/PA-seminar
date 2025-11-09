@@ -7,7 +7,7 @@ from collections import Counter
 import math
 import typing
 from typing import Any, FrozenSet, List, Tuple, Counter, Set, Union, Optional
-from deprecation import deprecated
+# from deprecation import deprecated
 from numpy.typing import NDArray
 from pm4py.objects.log.obj import EventLog, Trace, Event
 import pm4py.util.xes_constants as xes
@@ -222,88 +222,88 @@ def _transitiveClosure_Cases(case:Trace)->Set[Tuple[Event, Event]]:
 
 #TODO: Check and rewrite Adaptive Runs
 
-@deprecated("This function is deprecated and has not been tested in a very long time. Use with caution.")
-def detectChangepointsAdaptive(log:EventLog, windowSize:int, pvalue:float=0.05, activityName_key:str=xes.DEFAULT_NAME_KEY, return_pvalues:bool=False)->Union[List[int], Tuple[List[int], NDArray]]:
-    """An implementation of the ProDrift Algorithm using adaptive windows.
+# @deprecated("This function is deprecated and has not been tested in a very long time. Use with caution.")
+# def detectChangepointsAdaptive(log:EventLog, windowSize:int, pvalue:float=0.05, activityName_key:str=xes.DEFAULT_NAME_KEY, return_pvalues:bool=False)->Union[List[int], Tuple[List[int], NDArray]]:
+#     """An implementation of the ProDrift Algorithm using adaptive windows.
 
-    Args:
-        log (EventLog): The event log.
-        windowSize (int): The window size for the sliding window algorithm.
-        pvalue (float, optional): The pvalue threshold to consider a pvalue as a change point. Defaults to 0.05.
-        activityName_key (str, optional): The key for the activity value in the event log. Defaults to xes.DEFAULT_NAME_KEY.
-        return_pvalues (bool, optional): Configures whether the computed p-values should be returned as well. Defaults to False.
+#     Args:
+#         log (EventLog): The event log.
+#         windowSize (int): The window size for the sliding window algorithm.
+#         pvalue (float, optional): The pvalue threshold to consider a pvalue as a change point. Defaults to 0.05.
+#         activityName_key (str, optional): The key for the activity value in the event log. Defaults to xes.DEFAULT_NAME_KEY.
+#         return_pvalues (bool, optional): Configures whether the computed p-values should be returned as well. Defaults to False.
 
-    Returns:
-        Union[List[int], Tuple[List[int], NDArray]]: A list of the detected change point indices. If selected, also a numpy array of the calculated pvalues.
-    """    
+#     Returns:
+#         Union[List[int], Tuple[List[int], NDArray]]: A list of the detected change point indices. If selected, also a numpy array of the calculated pvalues.
+#     """    
 
-    #traces = extractTraces(log, activityName_key)
-    chis = numpy.ones(len(log))
-    #progress = makeProgressBar(len(log)-windowSize, "applying runs cpd pipeline, windows completed ::" )
-    previous_alphas = {}
-    nextWindowSize = windowSize
-    distinctRunsOld = None
-    distinctRunsNew = None
-    i = 0
-    while i + 2*nextWindowSize < len(log):
-        print(nextWindowSize, end="; ")
-        win1 = log[i:i + nextWindowSize]
-        win2 = log[i+nextWindowSize:i + (2*nextWindowSize)]
+#     #traces = extractTraces(log, activityName_key)
+#     chis = numpy.ones(len(log))
+#     #progress = makeProgressBar(len(log)-windowSize, "applying runs cpd pipeline, windows completed ::" )
+#     previous_alphas = {}
+#     nextWindowSize = windowSize
+#     distinctRunsOld = None
+#     distinctRunsNew = None
+#     i = 0
+#     while i + 2*nextWindowSize < len(log):
+#         print(nextWindowSize, end="; ")
+#         win1 = log[i:i + nextWindowSize]
+#         win2 = log[i+nextWindowSize:i + (2*nextWindowSize)]
 
-        # extract the runs in the populations
-        pop1, alphas1 = extractRuns(win1, activityName_key, alphas=previous_alphas.get(i,None),return_alphas=True)
-        pop2, alphas2 = extractRuns(win2, activityName_key, alphas=previous_alphas.get(i+windowSize,None),return_alphas=True)
+#         # extract the runs in the populations
+#         pop1, alphas1 = extractRuns(win1, activityName_key, alphas=previous_alphas.get(i,None),return_alphas=True)
+#         pop2, alphas2 = extractRuns(win2, activityName_key, alphas=previous_alphas.get(i+windowSize,None),return_alphas=True)
 
-        previous_alphas[i] = alphas1
-        previous_alphas[i+windowSize] = alphas2
-        # perform chi square test
-        keys  = list(set(pop2).union(set(pop1)))
-        #Create Contingency Matrix for Reference Window
-        mr = numpy.zeros(len(keys)) #Matrix For reference Window
-        for run in pop1:
-            # Find the index of the run in the matrix by looking up in keys, then set the count, if run isnt in the detection window, then 0 by default
-            mr[keys.index(run)] = pop1[run]
+#         previous_alphas[i] = alphas1
+#         previous_alphas[i+windowSize] = alphas2
+#         # perform chi square test
+#         keys  = list(set(pop2).union(set(pop1)))
+#         #Create Contingency Matrix for Reference Window
+#         mr = numpy.zeros(len(keys)) #Matrix For reference Window
+#         for run in pop1:
+#             # Find the index of the run in the matrix by looking up in keys, then set the count, if run isnt in the detection window, then 0 by default
+#             mr[keys.index(run)] = pop1[run]
 
-        #Create Contingency Matrix for Detection Window
-        md = numpy.zeros(len(keys)) #Matrix For detection Window. I dont really get why it's a matrix, so i assume this matrix has only 1 row and num_unique_runs columns
-        for run in pop2:
-            # Find the index of the run in the matrix by looking up in keys, then set the count, if run isnt in the detection window, then 0 by default
-            md[keys.index(run)] = pop2[run]
+#         #Create Contingency Matrix for Detection Window
+#         md = numpy.zeros(len(keys)) #Matrix For detection Window. I dont really get why it's a matrix, so i assume this matrix has only 1 row and num_unique_runs columns
+#         for run in pop2:
+#             # Find the index of the run in the matrix by looking up in keys, then set the count, if run isnt in the detection window, then 0 by default
+#             md[keys.index(run)] = pop2[run]
         
-        contingency = numpy.array([mr,md])
+#         contingency = numpy.array([mr,md])
 
-        # Apply Chi^2 Test on contingency matrix
-        # see https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html
-        #chi2, p, dof, expected <- these are the return values of chi2_contingency
-        _    , p, _  , _        = stats.chi2_contingency(contingency)
-        #We are testing for a changepoint at i+windowSize
-        chis[i+windowSize] = p
-        #progress.update()
-        # Update Adaptive Variables
-        distinctRunsOld = distinctRunsNew
-        distinctRunsNew = len(keys)
-        if distinctRunsOld is not None and distinctRunsNew is not None:
-            #Divide by zero impossible here unless window size is 0, then we have an entirely different problem :P
-            # Greater than 1 means distinctRunsOld > distinctRunsNew, which means that the amount has increased. And as such, the windowSize should decrease to compensate for this
-            nextWindowSize = math.ceil(nextWindowSize * (distinctRunsOld/distinctRunsNew))
-        i += 1
+#         # Apply Chi^2 Test on contingency matrix
+#         # see https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html
+#         #chi2, p, dof, expected <- these are the return values of chi2_contingency
+#         _    , p, _  , _        = stats.chi2_contingency(contingency)
+#         #We are testing for a changepoint at i+windowSize
+#         chis[i+windowSize] = p
+#         #progress.update()
+#         # Update Adaptive Variables
+#         distinctRunsOld = distinctRunsNew
+#         distinctRunsNew = len(keys)
+#         if distinctRunsOld is not None and distinctRunsNew is not None:
+#             #Divide by zero impossible here unless window size is 0, then we have an entirely different problem :P
+#             # Greater than 1 means distinctRunsOld > distinctRunsNew, which means that the amount has increased. And as such, the windowSize should decrease to compensate for this
+#             nextWindowSize = math.ceil(nextWindowSize * (distinctRunsOld/distinctRunsNew))
+#         i += 1
 
-    # Find change points using he pvalues
+#     # Find change points using he pvalues
 
-    # The number of consecutive points with chi-square result lower than alpha to be classified as a Changepoint 
-    # In the paper windowSize/3 was said to be best
-    changepoints = []
-    phi = windowSize/3
-    consecutive_chis = 0
-    for index, val in enumerate(chis):
-        if val < pvalue:
-            consecutive_chis += 1
-        else:
-            consecutive_chis = 0
+#     # The number of consecutive points with chi-square result lower than alpha to be classified as a Changepoint 
+#     # In the paper windowSize/3 was said to be best
+#     changepoints = []
+#     phi = windowSize/3
+#     consecutive_chis = 0
+#     for index, val in enumerate(chis):
+#         if val < pvalue:
+#             consecutive_chis += 1
+#         else:
+#             consecutive_chis = 0
         
-        if consecutive_chis == phi:
-            changepoints.append(index)
-    return changepoints if not return_pvalues else (changepoints, chis)
+#         if consecutive_chis == phi:
+#             changepoints.append(index)
+#     return changepoints if not return_pvalues else (changepoints, chis)
 
 
 def detectChangepoints(log:EventLog, windowSize:int, pvalue=0.05, activityName_key:str=xes.DEFAULT_NAME_KEY, return_pvalues:bool=False, show_progress_bar:bool=True, progressBar_pos:Optional[int]=None)->Union[List[int], Tuple[List[int], NDArray]]:
