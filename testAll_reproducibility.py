@@ -10,7 +10,7 @@ import pandas as pd
 # CDrift Approaches
 from cdrift.approaches import earthmover, bose, martjushev, lcdd
 #Maaradji
-# from cdrift.approaches import maaradji as runs
+from cdrift.approaches import maaradji as runs
 # Zheng
 from cdrift.approaches.zheng import applyMultipleEps
 #Process Graph CPD
@@ -503,10 +503,10 @@ def get_logpaths_with_changepoints():
 
 
     # The known changepoints for the generated additional logs
-    # logPaths_Changepoints += [
-    #     (item.as_posix(), [500, 1000])
-    #     for item in Path("EvaluationLogs","AdditionalLogs").iterdir()
-    # ]
+    logPaths_Changepoints += [
+        (item.as_posix(), [500, 1000])
+        for item in Path("EvaluationLogs","AdditionalLogs").iterdir()
+    ]
 
     # logPaths_Changepoints += [
     #     (item.as_posix(), [999,1999])
